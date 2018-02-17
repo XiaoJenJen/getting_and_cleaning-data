@@ -54,7 +54,8 @@ extractedDatasetWithNames<-merge(datasetExtracted,activityLabels,by="activityTyp
 # Create a second, independent tidy data set with the average of each variable
 # for each activity and each subject
 
-TidyDataset<-aggregate(.~subjectType + activityType, extractedDatasetWithNames, mean)
+TidyDataset <- aggregate(. ~subjectType + activityType, datasetExtracted, mean)
+TidyDataset<-merge(TidyDataset,activityLabels,by="activityType",all.x = TRUE)
 
 # Write this tidy dataset in txt file
 write.table(TidyDataset,"TidyDataset.txt",row.names = FALSE)
