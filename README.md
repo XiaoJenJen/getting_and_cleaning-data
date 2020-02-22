@@ -1,6 +1,5 @@
-# Course Project - Getting and Cleaning Data
-  This repository includes the R code and documentation files for the course 
-  project in the Getting and Cleaning Data Coursera course. The dataset is 
+# Project - Getting and Cleaning Data
+  This repository includes the R code and documentation files. The dataset is 
   wearable computing-data collected from accelerometers from Samsung Galaxy S 
   smartphone. 
   
